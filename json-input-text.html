@@ -23,5 +23,20 @@
         <button id="btn">Show</button>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('#btn').click(function(){
+                let name = $('#name').val();
+                let price = $('#price').val();
+                let quantity = $('#quality').val();
+
+                let product = {name: name, price: price, quantity: quantity};     //this is the json object 
+                let proSyntax = {name, price, quantity};
+                console.log({"name":name, "price":price, "quantity":quantity});
+                console.log(product);
+                console.log(proSyntax);
+            });
+        });
+    </script>
 </body>
 </html>
